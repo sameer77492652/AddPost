@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+    <ImageView
+        android:id="@+id/ivAdImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/activity_margin"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/activity_margin_small"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginTop="@dimen/activity_margin_small"
+        android:layout_toEndOf="@id/ivAdImage"
+        android:layout_toLeftOf="@+id/ivRight"
+        android:layout_toRightOf="@+id/ivAdImage"
+        android:layout_toStartOf="@+id/ivRight"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvAdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOTNET TRAINING IN MADURAI, Madurai"
+            android:textColor="@color/app_text_color_dark"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+
+        />
+
+        <TextView
+            android:id="@+id/tvAdContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAdName"
+            android:layout_marginTop="@dimen/activity_margin_extra_small"
+            android:drawablePadding="@dimen/activity_margin_extra_small"
+            android:gravity="center_vertical"
+            android:text="xxxx0005"
+            android:textColor="@color/app_text_color_light"
+            android:textSize="@dimen/text_size_small"
+        />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAdContact"
+            android:layout_marginTop="@dimen/activity_margin_extra_small"
+            android:drawablePadding="@dimen/activity_margin_extra_small"
+            android:gravity="center_vertical"
+            android:text="#43, North Masi Street, Near Krishnan Kovil, Simmakal, Madurai-01."
+            android:textColor="@color/app_text_color_light"
+            android:textSize="@dimen/text_size_small"
+        />
+
+
+        <TextView
+            android:id="@+id/tvAdAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddress"
+            android:layout_marginTop="@dimen/activity_margin_extra_small"
+            android:gravity="center_vertical"
+            android:text="27/04/2017"
+            android:textColor="@color/app_text_color_light"
+            android:textSize="@dimen/text_size_small"
+        />
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAdAmount"
+            android:layout_marginTop="@dimen/activity_margin_extra_small"
+            android:gravity="center_vertical"
+            android:text="Ad Posted on: 02 September 2017 18:40:34"
+            android:textColor="@color/app_text_color_light"
+            android:textSize="@dimen/text_size_small"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/activity_margin"
+        android:src="@drawable/ic_right"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>
